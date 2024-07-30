@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات المهندس علي برتغال</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>السلام عليكم جميعا</h1>
+        <p>اخواتي وحبايبي وكل اعضاء الجروب</p>
+        <p>اخوكم المهندس علي برتغال<br>
+        ( خادم المصريين والعرب في البرتغال )<br>
+        وده بتشرف بيه ووسام علي صدري</p>
+        <p>بفضل الله من يوم ما بدأت في خدمتكم تم الان:</p>
+        <ol>
+            <li>استقبال اكتر من عشرين مصري و عشره من اخواتنا العرب مغرب جزائر وتونس في المطار</li>
+            <li>بعد استقبالهم تم توفير سكن شهري ليهم</li>
+            <li>تم مساعدتهم في عمل الاوراق عند افضل المحامين والمحاسبين</li>
+            <li>تم عمل الجونتا لهم وشهاده السكن</li>
+            <li>تم عمل entrada legal</li>
+            <li>تم مساعدتهم في الذهاب الي جمعيات تساعد في الاكل والشرب و اللبس</li>
+            <li>تم مساعدتهم في فتح حساب بنكي</li>
+            <li>تم مساعدتهم في معرفه المستشفيات الحكوميه</li>
+            <li>تم مساعدتهم في عمل كارت المترو والباص والقطار</li>
+            <li>تم مساعدتهم في الوصول لجمعيات تساعد في توفير فرص عمل</li>
+            <li>تم مساعدتهم في معرفه وضع البلد والمطاعم وافضل الاماكن وافضل خطوط التليفون واماكن افضل الاسواق وارخصها</li>
+            <li>تم مساعدتهم في عمل الرقم الصحي</li>
+        </ol>
+        <p>هذه الخدمات بدون مقابل ولا مصلحه</p>
+        <p>ومازلت افتح زراعي لاي اخ مصري وعربي<br>
+        اتشرف بخدمتكم وتحت امركم جمعيا في اي خدمه او معلومه ....<br>
+        كان الله في عون العبد مادام العبد في عون اخيه<br>
+        خير الناس انفعهم للناس .....<br>
+        احب الاعمال الي الله سرور تدخله علي مسلم .</p>
+        <p>اخوكم....مهندس علي برتغال<br>
+        خادم المصريين والعرب في البرتغال</p>
+
+        <div class="button-container">
+            <button onclick="window.print()">Print</button>
+            <button onclick="copyContent()">Copy Content</button>
+        </div>
+    </div>
+
+    <script>
+        function copyContent() {
+            const el = document.createElement('textarea');
+            el.value = document.querySelector('.container').innerText;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            alert('Content copied to clipboard');
+        }
+    </script>
+</body>
+</html>
